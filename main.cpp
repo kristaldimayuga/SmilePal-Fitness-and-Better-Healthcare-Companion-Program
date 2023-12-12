@@ -44,7 +44,7 @@ void displayWorkoutPlan() {
     }
 }
     
-    void displayMealPlan() {
+void displayMealPlan() {
     int mpchoice;
     string mweightCategory, level;
 
@@ -81,7 +81,7 @@ void displayWorkoutPlan() {
     
     }
 
-    void displayUserAgreement() { 
+void displayUserAgreement() { 
         cout << "Terms of Use\n\nPlease be aware that our program does not guarantee a 100% achievement of your desired outcome. Your commitment and effort are essential for reaching your goals. Users must agree to exercise caution and thoroughly review the code to avoid any potential harm. Individuals with health issues or disabilities should be mindful of their limitations during exercises to prevent overexertion. Each user should assess their own capacity for work. The program offers accessible exercises that can be completed in your free time, respecting your schedule. While we cannot guarantee that all exercises can be performed, each exercise requires only 20 minutes or less. Users should also be conscious of their dietary choices and avoid any allergens. It is essential to prioritize your health and refrain from consuming foods that may pose a risk. With these considerations, we wish you an enjoyable journey toward shaping a healthier lifestyle." << endl;
         return;
     }
@@ -147,7 +147,7 @@ int main() {
 
                 // BMI
 
-                cout << "Hello " << name ;
+                cout << "\n\nHello " << name ;
 				cout << ". Your calculated  BMI is: " << bmi << endl;
 
 
@@ -156,23 +156,31 @@ int main() {
                 if (bmi < 18.5) {
 
                     cout << "You are very underweight and possibly malnourished. Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
+                    cout << "\n\npress any key to continue" << endl; 
+                    getch();
 
                 } else if (bmi >= 18.5 && bmi <= 24.9) {
 
                     cout << "You have a healthy (normal) weight range for young and middle-aged adults. Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
+                    cout << "\n\npress any key to continue" << endl;
+                    getch();
 
                 } else if (bmi >= 25.0 && bmi <= 29.9) {
-
+                    
                     cout << "You are overweight. Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
+                    cout << "\n\npress any key to continue" << endl;
+                    getch();
 
                 } else {
 
                     cout << "You are obese. Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
-
+                    cout << "\n\npress any key to continue" << endl;
+                    getch();
                 }
 
                 break;
 
+                
             case 2:
                 system("cls");
                 displayWorkoutPlan();
