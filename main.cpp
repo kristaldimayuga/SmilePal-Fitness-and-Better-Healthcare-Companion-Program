@@ -8,7 +8,7 @@ void displayWorkoutPlan() {
     int wpchoice;
     string weightCategory, difficulty;
 
-    cout << "Choose your weight category:\n";
+    cout << "\nChoose your weight category:\n";
     cout << "1. Underweight\n";
     cout << "2. Normal Weight\n";
     cout << "3. Overweight\n";
@@ -60,11 +60,11 @@ void displayWorkoutPlan() {
     switch (mpchoice) {
         case 1:
             level = "Underweight";
-            cout << "\nTo be paste\n";
+            cout << "\nRecommended Meal Plan for Under Weight:\n\nBreakfast:\n2 scrambled eggs with spinach and feta cheese\n1 whole grain toast with avocado spread\n1 cup of whole milk or a dairy-free alternative\n1 medium banana or other fruit of choice\n\nMid-Morning Snack:\nGreek yogurt with honey and mixed berries\nHandful of nuts (almonds, walnuts, or a mix)\n\nLunch:\nGrilled chicken or tofu salad with a variety of colorful vegetables (e.g., mixed greens, cherry tomatoes, cucumber, bell peppers)\nQuinoa or brown rice as a base\nOlive oil and lemon dressing\nA piece of whole grain bread or a serving of sweet potatoes\n\nAfternoon Snack:\nNut butter (peanut butter, almond butter) on whole grain crackers or apple slices\nA small handful of dried fruits (raisins, apricots)\n\nDinner:\nBaked grilled salmon or another lean protein source (chicken, turkey, tofu)\nSteamed or roasted vegetables (broccoli, carrots, Brussels sprouts)\nMashed sweet potatoes or whole grain pasta\nOlive oil or butter for added calories\n\nEvening Snack:\nA smoothie with whole milk or a dairy-alternative, banana, berries, a scoop of protein powder, and a spoon of nut butter\nWhole grain crackers with cheese\n\nTips:\nIncrease sizes Gradually increase portion sizes to ensure a calorie surplus.\nHealthy fats: Include sources of healthy fats such as avocados, nuts, seeds, and olive oil.\nProtein-rich foods: Prioritize protein-rich foods like lean meats, poultry, fish, tofu, legumes, and dairy.\nFrequent meals: Aim for 5-6 smaller meals throughout the day to make it easier to consume more calories.\nStay hydrated: Drink fluids, but avoid filling up on water right before meals to ensure you have room for nutrient-dense foods.\n";
             break;
         case 2:
             level = "Normal Weight";
-            cout << "\nTo be paste\n";
+            cout << "\nRecommended Meal Plan for Normal Weight:\n\nDay Meal Plan:\nBreakfast:\nScrambled eggs (2 eggs) with spinach and tomatoes\nWhole grain toast (1 slice)\nGreek yogurt with berries\n\nMid-Morning Snack:\nApple slices with almond butter\n\nLunch:\nGrilled chicken breast (4-6 oz) with quinoa\nSteamed broccoli and carrots\nMixed green salad with olive oil and balsamic vinegar dressing\n\nAfternoon Snack:\nHandful of mixed nuts (almonds, walnuts, and pistachios)\n\nDinner:\nBaked salmon (6 oz) with lemon and herbs\nSweet potato wedges\nAsparagus or green beans\n\nEvening Snack (optional):\nLow-fat cottage cheese with pineapple chunks\n\nFluid Intake:\nDrink plenty of water throughout the day. Aim for at least 8 glasses (64 ounces) of water.\n\nNotes:\nPortion sizes can be adjusted based on individual calorie needs.\nInclude a variety of colorful vegetables and fruits to ensure a broad range of nutrients.\nChoose whole grains over refined grains for added fiber and nutrients.\nInclude lean protein sources like poultry, fish, and legumes.\nUse healthy fats like olive oil and nuts in moderation.\nConsider individual dietary preferences and any food allergies or intolerances.";
             break;
         case 3:
             level = "Over Weight";
@@ -73,11 +73,17 @@ void displayWorkoutPlan() {
         case 4:
             level = "Obese";
             cout << "\nRecommended Meal Plan for Obese:\n\nBreakfast:\n- Option 1: Vegetable and egg scramble made with egg whites or whole eggs, sautéed spinach, onions, bell peppers, and a sprinkle of low-fat cheese.\n- Option 2: Whole grain cereal with low-fat milk or yogurt, topped with sliced bananas and a tablespoon of nuts or seeds.\n- Option 3: Whole wheat toast topped with mashed avocado, sliced tomatoes, and a poached egg.\n\nSnack:\n- Option 1: Greek yogurt with a drizzle of honey and a handful of berries.\n- Option 2: Celery sticks with almond butter.\n- Option 3: A small handful of mixed nuts and dried fruits.\n\nLunch:\n- Option 1: Grilled chicken or turkey breast with a side of steamed vegetables (broccoli, cauliflower, and carrots) and quinoa.\n- Option 2: Mixed green salad with grilled salmon, cherry tomatoes, cucumber, and a light vinaigrette dressing.\n- Option 3: Whole grain wrap filled with lean turkey or chicken, mixed greens, sliced avocado, and mustard.\n\nSnack:\n- Option 1: Carrot sticks with hummus.\n- Option 2: A small portion of air-popped popcorn.\n- Option 3: A piece of fruit, such as an apple or orange.\n\nDinner:\n- Option 1: Baked chicken or fish with roasted Brussels sprouts and a side of brown rice.\n- Option 2: Grilled lean steak with roasted sweet potatoes and a side of steamed asparagus.\n- Option 3: Stir-fried tofu or lean beef with mixed vegetables (broccoli, bell peppers, snap peas) and served over quinoa or whole wheat noodles.\n\nSnack:\n- Option 1: Greek yogurt with a sprinkle of granola and sliced strawberries.\n- Option 2: Sliced cucumber with a dollop of Greek yogurt and a sprinkle of herbs.\n- Option 3: A small handful of trail mix (unsalted nuts, dried fruits, and seeds).\n\nRemember to adjust portion sizes based on your calorie needs and weight loss goals. It's also important to engage in regular physical activity and consult with a registered dietitian for personalized guidance and support.\n";
+        
         default:
             cout << "Invalid choice.\n";
             return;
     }
     
+    }
+
+    void displayUserAgreement() { 
+        cout << "Terms of Use\n\nPlease be aware that our program does not guarantee a 100% achievement of your desired outcome. Your commitment and effort are essential for reaching your goals. Users must agree to exercise caution and thoroughly review the code to avoid any potential harm. Individuals with health issues or disabilities should be mindful of their limitations during exercises to prevent overexertion. Each user should assess their own capacity for work. The program offers accessible exercises that can be completed in your free time, respecting your schedule. While we cannot guarantee that all exercises can be performed, each exercise requires only 20 minutes or less. Users should also be conscious of their dietary choices and avoid any allergens. It is essential to prioritize your health and refrain from consuming foods that may pose a risk. With these considerations, we wish you an enjoyable journey toward shaping a healthier lifestyle." << endl;
+        return;
     }
 
 int main() {
@@ -90,12 +96,14 @@ int main() {
     do {
         system("cls");
 
-        cout << "Display menu\n\n";
+        cout << "Hi, Welcome to Fitpal! Let's tart your fitness journey.\n\n";
+        cout << "Display menu\n";
         cout << "1. Users Profile\n";
         cout << "2. Workout Plan\n";
         cout << "3. Meal Plan\n";
-        cout << "4. Exit\n";
-        cout << "Enter your choice (1-4): ";
+        cout << "4. User Agreement\n";
+        cout << "5. Exit\n";
+        cout << "Enter your choice (1-5): ";
 
         cin >> mainChoice;
 
@@ -171,9 +179,16 @@ int main() {
                 getch();
                 break;
             case 3:
+                system("cls");
 			    displayMealPlan();
+                getch();
 			    break;
             case 4:
+                system("cls");
+                displayUserAgreement();
+                getch();
+                break;
+            case 5:
                 cout << "Exiting program.\n";
                 break;
             default:
