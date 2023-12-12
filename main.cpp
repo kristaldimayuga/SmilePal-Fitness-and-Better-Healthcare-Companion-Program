@@ -140,7 +140,7 @@ int main() {
                 // BMI
 
                 cout << "Hello " << name ;
-				cout << ". It seems that your calculated  BMI is: " << bmi << endl;
+				cout << ". Your calculated  BMI is: " << bmi << endl;
 
 
                 // Show results
@@ -151,15 +151,15 @@ int main() {
 
                 } else if (bmi >= 18.5 && bmi <= 24.9) {
 
-                    cout << "You have a healthy weight range for young and middle-aged adults.Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
+                    cout << "You have a healthy (normal) weight range for young and middle-aged adults. Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
 
                 } else if (bmi >= 25.0 && bmi <= 29.9) {
 
-                    cout << "You are overweight.Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
+                    cout << "You are overweight. Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
 
                 } else {
 
-                    cout << "You are obese.Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
+                    cout << "You are obese. Please proceed to the other options to look for you recommended workout plan and meal plan." << endl;
 
                 }
 
