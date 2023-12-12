@@ -39,7 +39,6 @@ void displayWorkoutPlan() {
             cout << "\nYou Have Chosen Obese as your BMI!\nEasy Exercise:\nLow-impact Aerobics: \n\nDuration: 20-30 minutes\nIntensity: Low to moderate\nFrequency: 3-5 times per week\nLow-impact aerobics, such as water aerobics or low-impact dance workouts, can be gentle on the joints while still providing cardiovascular benefits.\n\nModerate Exercise:\nStationary Cycling: \n\nDuration: 30 minutes\nIntensity: Moderate\nFrequency: 3-4 times per week\nStationary cycling is a low-impact option that helps improve cardiovascular health and burn calories. It's a good way to gradually increase intensity without putting excessive stress on the joints.\n\nHard Exercise:\nElliptical Training: \n\nDuration: 30 minutes\nIntensity: Moderate to high\nFrequency: 3-4 times per week\nUsing an elliptical machine provides a full-body workout with low impact on the joints. It challenges both the upper and lower body, aiding in weight management and cardiovascular fitness.\n";
         default:
             system("cls");
-            cout << "Invalid choice.\n";
             return;
     }
 }
@@ -75,7 +74,6 @@ void displayMealPlan() {
             cout << "\nRecommended Meal Plan for Obese:\n\nBreakfast:\n- Option 1: Vegetable and egg scramble made with egg whites or whole eggs, sautéed spinach, onions, bell peppers, and a sprinkle of low-fat cheese.\n- Option 2: Whole grain cereal with low-fat milk or yogurt, topped with sliced bananas and a tablespoon of nuts or seeds.\n- Option 3: Whole wheat toast topped with mashed avocado, sliced tomatoes, and a poached egg.\n\nSnack:\n- Option 1: Greek yogurt with a drizzle of honey and a handful of berries.\n- Option 2: Celery sticks with almond butter.\n- Option 3: A small handful of mixed nuts and dried fruits.\n\nLunch:\n- Option 1: Grilled chicken or turkey breast with a side of steamed vegetables (broccoli, cauliflower, and carrots) and quinoa.\n- Option 2: Mixed green salad with grilled salmon, cherry tomatoes, cucumber, and a light vinaigrette dressing.\n- Option 3: Whole grain wrap filled with lean turkey or chicken, mixed greens, sliced avocado, and mustard.\n\nSnack:\n- Option 1: Carrot sticks with hummus.\n- Option 2: A small portion of air-popped popcorn.\n- Option 3: A piece of fruit, such as an apple or orange.\n\nDinner:\n- Option 1: Baked chicken or fish with roasted Brussels sprouts and a side of brown rice.\n- Option 2: Grilled lean steak with roasted sweet potatoes and a side of steamed asparagus.\n- Option 3: Stir-fried tofu or lean beef with mixed vegetables (broccoli, bell peppers, snap peas) and served over quinoa or whole wheat noodles.\n\nSnack:\n- Option 1: Greek yogurt with a sprinkle of granola and sliced strawberries.\n- Option 2: Sliced cucumber with a dollop of Greek yogurt and a sprinkle of herbs.\n- Option 3: A small handful of trail mix (unsalted nuts, dried fruits, and seeds).\n\nRemember to adjust portion sizes based on your calorie needs and weight loss goals. It's also important to engage in regular physical activity and consult with a registered dietitian for personalized guidance and support.\n";
         
         default:
-            cout << "Invalid choice.\n";
             return;
     }
     
@@ -83,7 +81,7 @@ void displayMealPlan() {
 
 void displayUserAgreement() { 
         cout << "Terms of Use\n\nPlease be aware that our program does not guarantee a 100% achievement of your desired outcome. Your commitment and effort are essential for reaching your goals. Users must agree to exercise caution and thoroughly review the code to avoid any potential harm. Individuals with health issues or disabilities should be mindful of their limitations during exercises to prevent overexertion. Each user should assess their own capacity for work. The program offers accessible exercises that can be completed in your free time, respecting your schedule. While we cannot guarantee that all exercises can be performed, each exercise requires only 20 minutes or less. Users should also be conscious of their dietary choices and avoid any allergens. It is essential to prioritize your health and refrain from consuming foods that may pose a risk. With these considerations, we wish you an enjoyable journey toward shaping a healthier lifestyle." << endl;
-        return;
+        getch();
     }
 
 int main() {
@@ -202,7 +200,7 @@ int main() {
             default:
                 cout << "Invalid choice. Please enter 1 to 3.\n";
         }
-    } while (mainChoice != 4);
+    } while (mainChoice != 5);
 
     return 0;
 }
