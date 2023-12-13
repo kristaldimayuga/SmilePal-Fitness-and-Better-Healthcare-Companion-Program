@@ -442,7 +442,8 @@ int main() {
                     cout << "Invalid choice. Exiting.\n";
                     break;
             }
-        } else {
+        } 
+        else {
             cout << "Invalid mood rating. Exiting.\n";
         }
     } while (mood !=8);
