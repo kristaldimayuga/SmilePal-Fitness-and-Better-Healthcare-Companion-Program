@@ -1,1 +1,1 @@
-# Fitpal-Fitness-and-Better-Healthcare-Companion-Program
+# SmilePal-Fitness-and-Better-Healthcare-Companion-Program
