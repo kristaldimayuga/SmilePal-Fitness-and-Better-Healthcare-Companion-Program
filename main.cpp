@@ -97,7 +97,7 @@ void suggestRandomActivities() {
    char answer;
    cin >> answer;
    
-   if (answer == 'y') {
+   if (answer == 'y','Y') {
             cout << SetColor(14) << "\nHere are some three quick activities for you to do to make your day better and productive.\n";
         for (int i = 0; i < 3; ++i) {
             int randomIndex = rand() % activities.size();
@@ -105,7 +105,7 @@ void suggestRandomActivities() {
             activities.erase(activities.begin() + randomIndex); // Remove the selected activity 
         } 
     } 
-    else if (answer == 'n') {
+    else if (answer == 'n','N') {
        cout << "\nGot it!, feel free to come back whenever you need suggestions. Have a great day!\n";
     } 
     else { cout << SetColor(3) << "Ohh no, you put the wrong option. Please enter 'y' or 'n' only.\n";
@@ -224,7 +224,7 @@ void suggestRandomDA() {
    char answer;
    cin >> answer;
    
-   if (answer == 'y') {
+   if (answer == 'y','Y') {
        cout << SetColor(14) << "\nHere are three daily affirmations just for you!\n";
        for (int i = 0; i < 3; ++i) {
        int randomIndex = rand() % activities.size();
@@ -232,7 +232,7 @@ void suggestRandomDA() {
        activities.erase(activities.begin() + randomIndex); // Remove the selected activity 
        } 
     } 
-    else if (answer == 'n') {
+    else if (answer == 'n','N') {
        cout << "\nAlright, feel free to come back whenever you need some affirmations. Have a great day!\n";
     } 
     else { cout << SetColor(3) << "Ohh no!, wrong input. Please enter 'y' or 'n' only.\n";
@@ -429,7 +429,7 @@ int main() {
                     getch();
                     break;
                 case 7:
-                    cout << SetColor(7) << "It's okay, we get sometimes. Have a good rest :> \n\n";
+                    cout << SetColor(7) << "It's okay, we get tired sometimes. Have a good rest :> \n\n";
                 return 0;
                 break;
                 case 8:
